@@ -25,6 +25,7 @@ public class StandaloneTest {
 		String productName = "ZARA COAT 3";
 		String country = "India";
 		
+		//Hello World
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //implicit wait
 		
 		
