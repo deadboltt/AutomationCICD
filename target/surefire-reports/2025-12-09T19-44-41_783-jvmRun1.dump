@@ -1,0 +1,58 @@
+# Created at 2025-12-09T19:44:43.350
+org.testng.TestNGException: 
+Cannot instantiate class SeleniumTest.TestComponents.Listeners
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:43)
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:61)
+	at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:10)
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:61)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispenseObject(GuiceBasedObjectDispenser.java:41)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:31)
+	at org.testng.TestNG.addListeners(TestNG.java:1012)
+	at org.testng.TestNG.initializeConfiguration(TestNG.java:970)
+	at org.testng.TestNG.initializeEverything(TestNG.java:1060)
+	at org.testng.TestNG.run(TestNG.java:1071)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:40)
+	... 16 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The type java.lang.Object cannot be resolved. It is indirectly referenced from required .class files
+	The import java.io.IOException cannot be resolved
+	The hierarchy of the type Listeners is inconsistent
+	ThreadLocal cannot be resolved to a type
+	ThreadLocal cannot be resolved to a type
+	Override cannot be resolved to a type
+	The method getMethodName() from the type ITestNGMethod refers to the missing type String
+	ThreadLocal cannot be resolved to a type
+	Override cannot be resolved to a type
+	The method log(Status, String) from the type ExtentTest refers to the missing type String
+	Override cannot be resolved to a type
+	ThreadLocal cannot be resolved to a type
+	The method getThrowable() from the type ITestResult refers to the missing type Throwable
+	The method getRealClass() from the type IClass refers to the missing type Class
+	The method getInstance() from the type ITestResult refers to the missing type Object
+	Exception cannot be resolved to a type
+	String cannot be resolved to a type
+	The method getMethodName() from the type ITestNGMethod refers to the missing type String
+	IOException cannot be resolved to a type
+	ThreadLocal cannot be resolved to a type
+	The method getMethodName() from the type ITestNGMethod refers to the missing type String
+	Override cannot be resolved to a type
+	Override cannot be resolved to a type
+	Override cannot be resolved to a type
+	Override cannot be resolved to a type
+
+	at SeleniumTest.TestComponents.Listeners.<init>(Listeners.java:1)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 19 more
+
+

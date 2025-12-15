@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="SeleniumTest.Tests.ErrorValidationsTest">
+        <methods>
+          <include name="productErrorValidation"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SeleniumTest.Tests.ErrorValidationsTest -->
+      <class name="SeleniumTest.Tests.SubmitOrderTest">
+        <methods>
+          <include name="dependencyOrderTest"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SeleniumTest.Tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
