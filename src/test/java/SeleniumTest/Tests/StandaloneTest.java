@@ -26,6 +26,7 @@ public class StandaloneTest {
 		String country = "India";
 		
 		//Hello World
+		//Hello World2
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //implicit wait
 		
 		
